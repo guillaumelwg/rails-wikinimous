@@ -1,0 +1,11 @@
+<h1><%= @article.title %></h1>
+<img src="https://picsum.photos/600/400" alt="lorem-photo">
+<p><%= @article.content %></p>
+<p><%= link_to "Edit this article", edit_article_path %></p>
+<p><%= link_to "Delete this article",
+            article_path(@article),
+            method: :delete,
+            data: { confirm: "Are you sure?" } %></p>
+<p><%= link_to "Back to all articles", articles_path %></p>
+
+
